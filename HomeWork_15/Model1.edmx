@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище MSSQLLocalModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ClientsOfBank">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Age" Type="int" />
+          <Property Name="DepartmentId" Type="int" />
+          <Property Name="RateOfCredit" Type="float" />
+          <Property Name="MinRate" Type="float" />
+          <Property Name="FirstAccountValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="SumOnFirstAccountValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="SecondAccountValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="SumOnSecondAccountValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="DepositWithoutCapValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="MonthDepositWithoutCapValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="SumDepositWithoutCapValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="DepositWithCapValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="MonthDepositWithCapValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="SumDepositWithCapValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreditValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="MonthCreditValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="PecentOfCreditValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="isRedusedRate" Type="bit" />
+          <Property Name="JournalOfClientActions" Type="ntext" />
+          <Property Name="isCreatedDataDase" Type="bit" />
+          <Property Name="FirstBaseMessages" Type="ntext" />
+          <Property Name="SecondBaseMessages" Type="ntext" />
+          <Property Name="ThirdBaseMessages" Type="ntext" />
+          <Property Name="FourtnBaseMessages" Type="ntext" />
+          <Property Name="FifthBaseMessages" Type="ntext" />
+          <Property Name="SixthBaseMessages" Type="ntext" />
+          <Property Name="SeventhBaseMessages" Type="ntext" />
+          <Property Name="EighthBaseMessages" Type="ntext" />
+          <Property Name="NinthBaseMessages" Type="ntext" />
+          <Property Name="TenthBaseMessages" Type="ntext" />
+          <Property Name="InitialMonthDepositWithCap" Type="int" />
+          <Property Name="InitialMonthCredit" Type="int" />
+          <Property Name="InitialSumCredit" Type="int" />
+        </EntityType>
+        <EntityContainer Name="Хранилище MSSQLLocalModelContainer">
+          <EntitySet Name="ClientsOfBank" EntityType="Self.ClientsOfBank" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MSSQLLocalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ClientsOfBank">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Age" Type="Int32" />
+          <Property Name="DepartmentId" Type="Int32" />
+          <Property Name="RateOfCredit" Type="Double" />
+          <Property Name="MinRate" Type="Double" />
+          <Property Name="FirstAccountValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SumOnFirstAccountValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SecondAccountValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SumOnSecondAccountValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DepositWithoutCapValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MonthDepositWithoutCapValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SumDepositWithoutCapValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DepositWithCapValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MonthDepositWithCapValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SumDepositWithCapValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreditValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MonthCreditValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PecentOfCreditValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="isRedusedRate" Type="Boolean" />
+          <Property Name="JournalOfClientActions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="isCreatedDataDase" Type="Boolean" />
+          <Property Name="FirstBaseMessages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SecondBaseMessages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ThirdBaseMessages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FourtnBaseMessages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FifthBaseMessages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SixthBaseMessages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SeventhBaseMessages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EighthBaseMessages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NinthBaseMessages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TenthBaseMessages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="InitialMonthDepositWithCap" Type="Int32" />
+          <Property Name="InitialMonthCredit" Type="Int32" />
+          <Property Name="InitialSumCredit" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="MSSQLLocalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ClientsOfBanks" EntityType="Self.ClientsOfBank" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище MSSQLLocalModelContainer" CdmEntityContainer="MSSQLLocalEntities">
+          <EntitySetMapping Name="ClientsOfBanks">
+            <EntityTypeMapping TypeName="MSSQLLocalModel.ClientsOfBank">
+              <MappingFragment StoreEntitySet="ClientsOfBank">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+                <ScalarProperty Name="RateOfCredit" ColumnName="RateOfCredit" />
+                <ScalarProperty Name="MinRate" ColumnName="MinRate" />
+                <ScalarProperty Name="FirstAccountValue" ColumnName="FirstAccountValue" />
+                <ScalarProperty Name="SumOnFirstAccountValue" ColumnName="SumOnFirstAccountValue" />
+                <ScalarProperty Name="SecondAccountValue" ColumnName="SecondAccountValue" />
+                <ScalarProperty Name="SumOnSecondAccountValue" ColumnName="SumOnSecondAccountValue" />
+                <ScalarProperty Name="DepositWithoutCapValue" ColumnName="DepositWithoutCapValue" />
+                <ScalarProperty Name="MonthDepositWithoutCapValue" ColumnName="MonthDepositWithoutCapValue" />
+                <ScalarProperty Name="SumDepositWithoutCapValue" ColumnName="SumDepositWithoutCapValue" />
+                <ScalarProperty Name="DepositWithCapValue" ColumnName="DepositWithCapValue" />
+                <ScalarProperty Name="MonthDepositWithCapValue" ColumnName="MonthDepositWithCapValue" />
+                <ScalarProperty Name="SumDepositWithCapValue" ColumnName="SumDepositWithCapValue" />
+                <ScalarProperty Name="CreditValue" ColumnName="CreditValue" />
+                <ScalarProperty Name="MonthCreditValue" ColumnName="MonthCreditValue" />
+                <ScalarProperty Name="PecentOfCreditValue" ColumnName="PecentOfCreditValue" />
+                <ScalarProperty Name="isRedusedRate" ColumnName="isRedusedRate" />
+                <ScalarProperty Name="JournalOfClientActions" ColumnName="JournalOfClientActions" />
+                <ScalarProperty Name="isCreatedDataDase" ColumnName="isCreatedDataDase" />
+                <ScalarProperty Name="FirstBaseMessages" ColumnName="FirstBaseMessages" />
+                <ScalarProperty Name="SecondBaseMessages" ColumnName="SecondBaseMessages" />
+                <ScalarProperty Name="ThirdBaseMessages" ColumnName="ThirdBaseMessages" />
+                <ScalarProperty Name="FourtnBaseMessages" ColumnName="FourtnBaseMessages" />
+                <ScalarProperty Name="FifthBaseMessages" ColumnName="FifthBaseMessages" />
+                <ScalarProperty Name="SixthBaseMessages" ColumnName="SixthBaseMessages" />
+                <ScalarProperty Name="SeventhBaseMessages" ColumnName="SeventhBaseMessages" />
+                <ScalarProperty Name="EighthBaseMessages" ColumnName="EighthBaseMessages" />
+                <ScalarProperty Name="NinthBaseMessages" ColumnName="NinthBaseMessages" />
+                <ScalarProperty Name="TenthBaseMessages" ColumnName="TenthBaseMessages" />
+                <ScalarProperty Name="InitialMonthDepositWithCap" ColumnName="InitialMonthDepositWithCap" />
+                <ScalarProperty Name="InitialMonthCredit" ColumnName="InitialMonthCredit" />
+                <ScalarProperty Name="InitialSumCredit" ColumnName="InitialSumCredit" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
